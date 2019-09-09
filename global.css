@@ -1,0 +1,56 @@
+/* -- body section -- */
+body{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    background: #FFE6C2;
+}
+body.night{
+    background: #00151f;
+}
+/* -- toggle section -- */
+.toggle{
+    position: absolute;
+    top: 40px;
+    width: 45px;
+    right: 50px;
+    height: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    background: #FFE6C2;
+    border: 1px solid #00151f;
+}
+.toggle.active{
+    background: #00151f;
+    border: 1px solid #fff;
+}
+.toggle:before{
+    top: 1px;
+    left: 2px;
+    content: '';
+    width: 16px;
+    height: 18px;
+    transition: 0.5s;
+    border-radius: 50%;
+    position: absolute;
+    background: #00151f;
+}
+.toggle.active::before{
+    left: 27px;
+    background: #528DB3;
+}
+/* -- content section -- */
+h1{
+    color: #000;
+    font-size: 40px;
+}
+p{
+    color: #000;
+    font-size: 16px;
+}
+body.night h1,
+body.night p,
+body.night a{
+    color: #fff;
+}

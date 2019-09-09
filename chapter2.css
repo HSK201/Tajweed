@@ -1,0 +1,103 @@
+/* --- Body Setting --- */
+body{
+    background: #FFE6C2;
+}
+/* --- Font style section --- */
+.header h1{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 40px;
+}
+.sectionHeader .sectionHeader-1 a{
+    font-family: 'Markazi Text', serif;
+    font-size: 25px;
+}
+.detail p span{
+    font-weight: bold;
+    font-size: 16px;
+}
+/* --- ----------------- --- */
+
+/* -- Header Section --- */
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.sectionHeader{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    border-bottom: #528DB3 1px solid;
+    margin: 7px;
+}
+.sectionHeader-1{
+    padding: 7px;
+    color: #262626;
+}
+.sectionHeader-1 a{
+    text-decoration: none;
+    color: #262626;
+}
+.sectionHeader-1 a:hover{
+    background: #fff;
+    color: #b3b3b3;
+}
+/* --- ------------ --- */
+
+/* --- mainBody --- */
+.mainBody{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12px;
+}
+.topic{
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    margin: 7px;
+    padding: 10px;
+    height: 100px;
+    width: 900px;
+    background: #FFE6C2 #FFDBA8;
+}
+.detail{
+    margin: 7px;
+    padding: 10px;
+    height: 100px;
+    width: 900px;
+}
+h3{
+    text-align: center;
+    font-family: 'Markazi Text', serif;
+    font-size: 25px;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+}
+/* --- ------ --- */
+/* footer section */
+footer{ 
+    display: block;
+    color: #B3B3B3;
+    font-size: 11.2px;
+    padding: 22.4px 0px 0px;
+}
+.copyright{
+    color: #B3B3B3;
+    margin: 0px 20px 10px;
+}
+/* --- ------------ --- */
+/* -- Body night -- */
+body.night .topic{
+    background: #528DB3;
+    color: #fff;
+}
+body.night .detail{
+    background: #fff;
+}
+body.night .detail p{
+    color: #000;
+}

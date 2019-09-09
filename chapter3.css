@@ -1,0 +1,121 @@
+/* --- Font style section --- */
+.header h1{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 40px;
+}
+.sectionHeader .sectionHeader-1 a{
+    font-family: 'Markazi Text', serif;
+    font-size: 25px;
+}
+.content p span{
+    font-weight: bold;
+    font-size: 16px;
+}
+/* --- ----------------- --- */
+/* --- Header Section --- */
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+}
+.sectionHeader{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    border-bottom: #528DB3 1px solid;
+    margin: 7px;
+}
+.sectionHeader-1{
+    padding: 7px;
+}
+.sectionHeader-1 a{
+    text-decoration: none;
+    color: #262626;
+}
+.sectionHeader-1 a:hover{
+    background: #fff;
+    color: #b3b3b3;
+}
+/* --- ------------- --- */
+/* footer section */
+footer{ 
+    display: block;
+    color: #B3B3B3;
+    font-size: 11.2px;
+    padding: 22.4px 0px 0px;
+}
+.copyright{
+    color: #B3B3B3;
+    margin: 0px 20px 10px;
+}
+/* --- ------------ --- */
+body.night .main{
+    background: #00151f;
+}
+.content{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+/* -- moon image -- */
+.moon-image{
+    position: absolute;
+    top: 35px;
+    width: 0px;
+    right: 50px;
+}
+/* loader Main section */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin-top: 7px;
+    background:#FFE6C2;
+}
+.loader{
+    position: relative;
+    display: flex;
+}
+.loader span{
+    width: 50px;
+    height: 150px;
+    margin:  0 20px;
+    background: #528DB3;
+    animation: animate 1.4s linear infinite;
+}
+.loader span:nth-child(1){
+    animation-delay: 0s;
+}
+.loader span:nth-child(2){
+    animation-delay: 0.2s;
+}
+.loader span:nth-child(3){
+    animation-delay: 0.4s;
+}
+.loader span:nth-child(4){
+    animation-delay: 0.6s;
+}
+.loader span:nth-child(5){
+    animation-delay: 0.8s;
+}
+@keyframes animate{
+    0% { box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+        opacity: 0;
+        transform: translateX(-50px) scale(1);
+    }
+    50% { box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+        opacity: 1;
+        transform: translateX(0px) scale(1.2);
+    }
+    100% { box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+        opacity: 0;
+        transform: translateX(50px) scale(1);
+    }
+}
+.content h1{
+    color: #000;
+}

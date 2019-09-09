@@ -1,0 +1,166 @@
+/* -- Font Style Section -- */
+.header h1{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 40px;
+}
+.sectionHeader .sectionHeader-1 a{
+    font-family: 'Markazi Text', serif;
+    font-size: 25px;
+}
+.content p span{
+    font-weight: bold;
+    font-size: 16px;
+}
+/* -- --- --- --- -- */
+
+/* -- Header Section -- */
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+}
+.sectionHeader{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    border-bottom: #528DB3 1px solid;
+    margin: 7px;
+}
+.sectionHeader-1{
+    padding: 7px;
+}
+.sectionHeader-1 a{
+    text-decoration: none;
+    color: #262626;
+}
+.sectionHeader-1:nth-of-type(1){
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    background: #528DB3;
+    color: #262626;
+}
+.sectionHeader-1 a:hover{
+    background: #fff;
+    color: #b3b3b3;
+}
+/* -- --- --- --- -- */
+/* --- Main Section --- */
+.main{
+    margin: 0;
+    padding: 0;
+    background: #FFE6C2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.container .card{
+    position: relative;
+}
+.container .card .face {
+    width:  300px;
+    height: 200px;
+    transition: 0.5s;
+}
+.container .card .face.face1{
+    transform: translateY(100px);
+    justify-content: center;
+    background: #FFE6C2;
+    align-items: center;
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+
+.container .card:hover .face.face1{
+    background: #528DB3;
+    transform: translateY(0px);   
+}
+.container .card .face.face1 .content{
+    transition: 0.5s;
+    opacity: 0.2;
+}
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+.container .card .face.face1 .content h3{
+    text-align: center;
+    color: #262626;
+    margin: 10px 0 0;
+    font-size: 1.5em;
+    padding: 0;
+}
+.container .card .face.face2{
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    background: #fff;
+    position: relative;
+    display: flex;
+    padding: 20px;
+}
+.container .card:hover .face.face2{
+    transform: translateY(0px);
+}
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+.container .card .face.face2 .content a{
+    border: 1px solid #333;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 0 0;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+}
+.container .card .face.face2 .content a:hover{
+    background: #333333;
+    color: #fff;
+
+}
+/* --- ------------ --- */
+p{
+    float: right;
+    text-align: right;
+}
+/* --- ------------ --- */
+
+/* -- Body Night -- */
+body.night .main{
+    background: #00151f;
+}
+body.night .container .card .face.face1{
+    background: #528DB3;
+}
+body.night .container .card .face.face1 .content h3{
+    color: #fff;
+}
+body.night .container .card .face.face2 .content p{
+    color: #000;
+}
+/* -- ---------- -- */
+
+/* footer section */
+footer{ 
+    display: block;
+    color: #B3B3B3;
+    font-size: 11.2px;
+    padding: 22.4px 0px 0px;
+}
+.copyright{
+    color: #B3B3B3;
+    margin: 0px 20px 10px;
+}
+/* --- ------------ --- */

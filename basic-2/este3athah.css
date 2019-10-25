@@ -1,10 +1,11 @@
-/* --- Body Setting --- */
+/* Body Sectiom */
 body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: #00A8A4;
+    background-color: #00A8A4; 
 }
+/* ------- */
 /* Scroll Bar */
 ::-webkit-scrollbar{
     width: 12px;
@@ -14,42 +15,29 @@ body{
     background: linear-gradient( #4AE8C1 , rgba(255, 255, 255, 0.781) , #4AE8C1);
 }
 /* ------- */
-/* --- Font style section --- */
-.detail p span{
-    font-weight: bold;
-    font-size: 16px;
-}
-/* --- ----------------- --- */
-
-/* -- Header Section --- */
+/* Header Section */
 header{
     height: 85px;
     padding: 15px;
     margin: 20px auto;
     max-width: 1200px;
-    border-radius: 4px;
     position: relative;
+    border-radius: 4px;
     background: #4AE8C1;
     box-sizing: border-box;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 header .logo{
-    height: 60px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
     float: right;
-    color: #000;
-    font-size: 36px;
-    padding: 0 20px;
-    font-weight: 700;
-    line-height: 60px;
-    text-align: center;
-    box-sizing: border-box;
+    font-weight: bold;
     font-family: 'Tajawal', sans-serif;
 }
 header nav{
     float: left;
-}
-.clearfix{
-    clear: both;
 }
 header nav ul{
     margin: 0;
@@ -58,8 +46,6 @@ header nav ul{
 }
 header nav ul li{
     list-style: none;
-    margin-left: 10px;
-    margin-right: 10px;
     position: relative;
 }
 header nav ul li.sub-menu::before{
@@ -74,80 +60,41 @@ header nav ul li.active.sub-menu::before{
     content: '\f0dd';
 }
 header nav ul li ul{
-    left: 0;
-    display: none;
     position: absolute;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.911);
+    left: 0;
+    background: #333;
+    display: none;
 }
 header nav ul li.active ul{
     display: block;
 }
 header nav ul li ul li{
-    padding: 5px;
-    width: 230px;
     display: block;
-    font-size: 16px;
-    border-radius: 4px;   
+    width: 200px;
 }
 header nav ul a{
     height: 50px;
-    color: #000;
-    display: block;
-    font-size: 20px;
+    line-height: 50px;
     padding: 0 20px;
-    line-height: 60px;
-    text-align: center;
+    color: #fff;
     text-decoration: none;
+    display: block;
 }
+/*header nav ul a.active*/
 a:hover{
     color: #fff;
-    border-radius: 5px;
-    background-color: #00A8A4;
+    background-color: #363636;
 }
 .menu-toggle{
+    color: #fff;
     float: left;
-    display: none;
+    line-height: 50px;
     font-size: 24px;
     cursor: pointer;
-    color: #00A8A4;
-    line-height: 50px;
+    display: none;
 }
-/* --- ------------ --- */
-
-/* --- mainBody --- */
-.mainBody{
-    display: flex;
-    margin-top: 50px;
-    padding-top: 12px;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-.topic{
-    margin: 7px;
-    width: 900px;
-    padding: 10px;
-    height: 100px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-}
-.detail{
-    margin: 7px;
-    width: 900px;
-    padding: 10px;
-    height: 100px;
-    background-color: #4AE8C1;
-}
-h3{
-    font-size: 25px;
-    text-align: center;
-    font-family: 'Markazi Text', serif;
-}
-p{
-    font-size: 18px;
-    text-align: center;
-}
-/* --- ------ --- */
+/* ------- */
+/* Responsive */
 @media (max-width: 991px){
     header{
         padding: 0 20px;
@@ -184,23 +131,50 @@ p{
         width: 100%;
     }
 }
-/* -- footer -- */
-footer{
-    margin: 10px;
+/* ------- */
+h1{
+    color: #707070;
+    margin-top: 130px;
     text-align: center;
 }
-footer .copyright{
-    color: #4AE8C1;
+main{
+    margin: 50px;
+    height: 500px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
 }
-/* ------------------- */
-@media (max-width: 360px){
-    .container{
-        display: flex;
-        margin-top: 170px;
-        flex-direction: column;
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-left: 30px; 
-        margin-right: 30px;  
+
+@media (max-width: 991px){
+    main{
+        height: 800px;
     }
 }
+@media (max-width: 360px){
+    main{
+        height: 100%;
+    }
+}
+p{
+    float: right;
+    font-size: 20px;
+    text-align: right;
+}
+p span{
+    font-weight: bold;
+}
+.content{
+    margin: 20px;
+    margin-top: 25px;
+}
+.content ul{
+    display: flex;
+    flex-direction: column;
+}
+.content ul li{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    font-size: 20px;
+    text-align: right;
+} 
+/* ------- */

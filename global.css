@@ -3,7 +3,8 @@ body{
     margin: 0;
     padding: 0;
     transition: 0.5s;
-    background: #FFE6C2;
+    background: #fff;
+    font-family: sans-serif;
 }
 body.night{
     background: #00151f;
@@ -18,7 +19,7 @@ body.night{
     cursor: pointer;
     transition: 0.5s;
     border-radius: 20px;
-    background: #FFE6C2;
+    background: #fff;
     border: 1px solid #00151f;
 }
 .toggle.active{

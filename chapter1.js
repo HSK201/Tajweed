@@ -1,4 +1,4 @@
-$('.detail').hide();
+ $('.detail').hide();
 $('#topic_1').click(function(){
     $('#detail_1').show();
     $('#detail_2').hide();

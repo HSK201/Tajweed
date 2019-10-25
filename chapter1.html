@@ -6,25 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Markazi+Text&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="global.css">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:400,700&display=swap&subset=arabic" rel="stylesheet">
     <link rel="stylesheet" href="chapter1.css">
     <title>أحكام النون الساكنة و التنوين</title>
 </head>
 <body>
-    <div class="toggle"></div>
-    <div class="header">
-        <h1>
+    <header>
+        <div class="logo">
             التجويد الميسر
-        </h1>
-    </div>
-    <div class="sectionHeader">
-        <div class="sectionHeader-1">
-            <a href="globalMain.html">أقسام الدروس</a>
         </div>
-        <div class="sectionHeader-1">
-            <a href="about.html"> عنا </a>
-        </div>
-    </div>
+        <div class="menu-toggle">
+            <i class="fas fa-ellipsis-h"></i>
+        </div> 
+        <nav>
+            <ul>
+                <li><a href="#"> التواصل</a></li>
+                <li><a href="#"> عنا</a></li>
+                <li class="sub-menu" ><a href="#"> أقسام الدروس</a>
+                    <ul>
+                        <li> <a href="basic.html">البسملة و الإستعاذة</a> </li>
+                        <li> <a href="basic-2/allahen.html">اللحن في القرآن الكريم</a> </li>
+                        <li> <a href="#">أحكام النون الساكنة و التنوين</a> </li>
+                        <li> <a href="chapter2.html"> أحكام الميم الساكنة</a> </li>
+                        <li> <a href="chapter3.html">مخارج الحروف</a> </li>
+                    </ul>
+                </li>
+                <li><a href="globalMain.html"> الرئيسية</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>    
+    </header>
     <div class="mainBody">
         <div class="topic" id="topic_1">
             <h3>
@@ -80,7 +91,6 @@
                 و له خمسة عشر حرفاً و هي الباقية من حروف الهجاء            
             </p>
         </div>
-    
     </div>
     
     <footer>
@@ -90,7 +100,8 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src="global.js"></script>
+    <script src="https://kit.fontawesome.com/705d8d1760.js" crossorigin="anonymous"></script>
+    <script src="./basic-2/basmallah.js"></script>
     <script src="chapter1.js"></script>
 </body>
 </html>

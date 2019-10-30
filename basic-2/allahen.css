@@ -145,11 +145,15 @@ footer .copyright{
     .menu-toggle{
         display: block;
     }
+    header .logo{
+        font-size: 24px;
+        line-height: 50px;
+    }
     header nav{
         position: absolute;
         width: 100%;
         height: calc(100vh -50);
-        background: #333;
+        background: #00A8A4;
         top: 50px;
         left: -100%;
         transition: 0.5s;
@@ -167,7 +171,7 @@ footer .copyright{
     }
     header nav ul li.active ul{
         position: relative;
-        background: #003e6f;
+        background: #fff;
     }
     header nav ul li ul li{
         width: 100%;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -96,6 +97,22 @@ a:hover{
     border-radius: 5px;
     background-color: #00A8A4;
 }
+section{
+    display: flex;
+    height: 220px;
+    margin: 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+section h2{
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 7px;
+    font-family: 'Cairo', sans-serif;
+    box-shadow: 0 2px 5px rgba(219, 235, 234, 0.568);
+}
 .menu-toggle{
     float: left;
     display: none;
@@ -152,6 +169,9 @@ footer .copyright{
     header nav ul li ul li{
         width: 100%;
     }
+    section{
+        margin-top: 80px;
+    }
 }
 /* -- --- --- --- -- */
 /* --- Main Section --- */
@@ -161,7 +181,7 @@ footer .copyright{
     background: #00A8A4;
 }
 .container{
-    margin-top: 150px;
+    margin-top: 10px;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

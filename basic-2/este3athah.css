@@ -168,15 +168,13 @@ main{
 }
 
 @media (max-width: 991px){
-    main{
-        height: 800px;
+    main {
+        border-radius: 5px;
+        height: 1100px;
+        margin: 20px;
     }
 }
-@media (max-width: 360px){
-    main{
-        height: 100%;
-    }
-}
+
 p{
     float: right;
     font-size: 20px;
